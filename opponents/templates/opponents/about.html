@@ -1,0 +1,25 @@
+{% extends 'opponents/base.html' %}
+
+{% block title %} About - {{ block.super }}{% endblock %}
+
+{% block content %}
+<div class = "sectionheader">
+<h2>What we do</h2>
+</div>
+
+<p>
+    Here at "Find my Opponents", our main goal is to help futsal teams to find opponents the time they want at
+    the place they want.
+</p>
+
+<p>
+    We realize that many futsal field owners do not have the resources to find opponents for the requesting teams
+    so we came up with the idea of this website, allowing them to post their interested teams on the site so you
+    and your team can look at your options and decide who, where and when you want to play.
+</p>
+<p>
+    Enjoy the service and if you have any questions or suggestions please feel free to <a href = "{% url 'contact' %}">contact us</a> at once!
+</p>
+
+
+{% endblock %}
