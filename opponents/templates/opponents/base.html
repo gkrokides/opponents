@@ -14,17 +14,10 @@
 
 <body>
     <div class = "page-header">
-       <h1> <a href ="/">Welcome to "Find My Opponents"</a></h1>
-    </div>
-
-    <div class = "">
-        <nav class="navbar navbar-default" role = "navigation">
-            <ul class="nav navbar-nav" role="tablist">
-                <li><a href="{% url 'home' %}">Home</a></li>
-                <li><a href="{% url 'about' %}">About</a></li>
-                <li><a href="{% url 'contact' %}">Contact</a></li>
-            </ul>
-        </nav>
+        <a href="{% url 'contact' %}" class="top-button btn btn-warning">Contact</span></a>
+        <a href="{% url 'about' %}" class="top-button btn btn-warning">About</span></a>
+        <a href="{% url 'home' %}" class="top-button btn btn-warning">Home</span></a>
+        <h1> <a href ="/">Welcome to "Find My Opponents"</a></h1>
     </div>
 
     <div class="content container">
