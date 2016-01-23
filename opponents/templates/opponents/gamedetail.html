@@ -1,0 +1,19 @@
+{% extends 'opponents/base.html' %}
+
+{% block title %} Game details - {{ block.super }}{% endblock %}
+
+{% block header %} Game details {% endblock %}
+
+{% block content %}
+
+    <div class = "post">
+        <p>{{ form }}</p>
+        <a href="{% url 'game-details' %}" class="btn btn-warning">Search</span></a>
+        <p></p>
+        <p>Search results</p>
+    </div>
+
+
+
+
+{% endblock %}

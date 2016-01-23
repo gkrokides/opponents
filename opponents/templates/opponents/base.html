@@ -16,8 +16,9 @@
     <div class = "page-header">
         <a href="{% url 'contact' %}" class="top-button btn btn-warning">Contact</span></a>
         <a href="{% url 'about' %}" class="top-button btn btn-warning">About</span></a>
+        <a href="{% url 'game-search' %}" class="top-button btn btn-warning">Games</span></a>
         <a href="{% url 'home' %}" class="top-button btn btn-warning">Home</span></a>
-        <h1> <a href ="/">Welcome to "Find My Opponents"</a></h1>
+        <h1> <a href ="/">{% block header %}{% endblock %}</a></h1>
     </div>
 
     <div class="content container">
